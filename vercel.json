@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "app_final.py",
+      "use": "@vercel/python",
+      "config": { "runtime": "python3.12" }
+    },
+    {
+      "src": "static/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/static/(.*)/(.*)/(.*)",
+      "dest": "/static/$1/$2/$3"
+    },
+    {
+      "src": "/static/(.*)/(.*)$",
+      "dest": "/static/$1/$2"
+    },
+    {
+      "src": "/static/(.*)$",
+      "dest": "/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/app_final.py"
+    }
+  ],
+  "env": {
+    "NEO4J_URI": "neo4j+s://b5aca062.databases.neo4j.io",
+    "NEO4J_USER": "neo4j",
+    "NEO4J_PASSWORD": "f1JbNOL4JTcrBDmspbjYAe5QmZdHN6BdgLMWD9-2Ze0",
+    "DEBUG": "False",
+    "PORT": "3000"
+  },
+  "installCommand": "pip install -r requirements.txt"
+} 
