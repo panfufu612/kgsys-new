@@ -37,9 +37,9 @@ app = Flask(__name__)
 CORS(app)  # 启用跨域支持
 
 app.config.update(
-    NEO4J_URI=os.getenv('NEO4J_URI', "bolt://localhost:7687"),
+    NEO4J_URI=os.getenv('NEO4J_URI', "neo4j+s://b5aca062.databases.neo4j.io"),
     NEO4J_USER=os.getenv('NEO4J_USER', "neo4j"),
-    NEO4J_PASSWORD=os.getenv('NEO4J_PASSWORD', "12345678"),
+    NEO4J_PASSWORD=os.getenv('NEO4J_PASSWORD', "f1JbNOL4JTcrBDmspbjYAe5QmZdHN6BdgLMWD9-2Ze0"),
     DEBUG=os.getenv('DEBUG', 'True') == 'True',
     HOST=os.getenv('HOST', "127.0.0.1"),
     PORT=int(os.getenv('PORT', 5050)),

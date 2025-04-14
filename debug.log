@@ -164847,3 +164847,504 @@ TypeError: 'NoneType' object is not iterable
 2025-04-11 23:41:46,711 - __main__ - INFO - ³É¹¦Á¬½Óµ½Neo4jÊý¾Ý¿â
 2025-04-11 23:41:46,711 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
 2025-04-11 23:41:46,712 - werkzeug - INFO - 127.0.0.1 - - [11/Apr/2025 23:41:46] "GET /api/admin/nodes?page=1&limit=10 HTTP/1.1" 200 -
+2025-04-15 00:44:35,311 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+2025-04-15 00:44:35,312 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-15 00:44:35,313 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 00:44:36,334 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 00:44:36,432 - werkzeug - INFO -  * Debugger PIN: 133-101-651
+2025-04-15 00:44:42,145 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:42] "GET / HTTP/1.1" 200 -
+2025-04-15 00:44:42,313 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:42] "GET /static/css/graph.css HTTP/1.1" 200 -
+2025-04-15 00:44:42,314 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:42] "GET /static/js/graph.js HTTP/1.1" 200 -
+2025-04-15 00:44:42,433 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:42,434 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:42,435 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:42,436 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:42,436 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:42,437 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:42,437 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:42,437 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:42,439 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:42,439 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:42,440 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:42,447 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:42,448 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:42,449 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:42,449 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:44,497 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:44,498 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:44,498 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:44,498 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:44,498 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:44,498 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:44,498 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:44,499 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:44,499 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:44,499 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:44,520 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:44,520 - __main__ - INFO - Neo4jÊý¾Ý¿âÁ¬½ÓÒÑ¹Ø±Õ
+2025-04-15 00:44:44,521 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:44] "GET /stats HTTP/1.1" 200 -
+2025-04-15 00:44:44,561 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:44] "[36mGET /static/css/graph.css HTTP/1.1[0m" 304 -
+2025-04-15 00:44:44,565 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:44] "GET /static/js/stats.js HTTP/1.1" 200 -
+2025-04-15 00:44:44,613 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:44,614 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:44,614 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:44,615 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:44,615 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:44,615 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:44,615 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:44,615 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:44,615 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:44,616 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:44,616 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:44,616 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:44,616 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:44,616 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:44,616 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:44,617 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:44,617 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:46,525 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:46,525 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:46,525 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:46,526 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:46,526 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:46,526 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:46,527 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:46,527 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:44:46,528 - app_final - WARNING - ²éÑ¯Ö´ÐÐÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3): Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:46,634 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:46,635 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:46,635 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:46,637 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:46,637 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:46,649 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:46,650 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:46,650 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:46,651 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:46,652 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:47,528 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:47,529 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:47,530 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:47,530 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:47,532 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:47,532 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:47,534 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:47,534 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:47,536 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:47,537 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:47,537 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:47,538 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:47,538 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:47,538 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:47,539 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:47,539 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:47,539 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:48,685 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:48,687 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:48,688 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:48,689 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:44:48,716 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:48,716 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:48,717 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:48,717 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:44:49,581 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:49,581 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:49,582 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:49,582 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:49,583 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:49,584 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:49,584 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:49,584 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:49,585 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:49,585 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:49,690 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:49,691 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:49,691 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:49,691 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:49,692 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:49,692 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:49,692 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:49,692 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:49,692 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:49,718 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:49,718 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:49,719 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:49,719 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:49,719 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:49,719 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:49,719 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:49,719 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:49,719 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:51,619 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:51,619 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:51,621 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:51,622 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:44:51,635 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:51,636 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:51,637 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:51,638 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:44:51,727 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:51,729 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:51,730 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:51,731 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:51,732 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:51,773 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:51,773 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:51,774 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:51,774 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:51,775 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:52,623 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:52,624 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:52,624 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:52,625 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:52,625 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:52,625 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:52,626 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:52,626 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:52,627 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:52,640 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:52,640 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:52,641 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:52,641 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:52,642 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:52,642 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:52,643 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:52,644 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:52,644 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:53,773 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:53,773 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:53,773 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:53,774 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:44:53,819 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:53,819 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:53,821 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:53,821 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:44:54,677 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:54,678 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:54,678 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:54,678 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:54,678 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:54,693 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:54,693 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:54,694 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:54,694 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:54,695 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:54,775 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:54,778 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:54,779 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:54,780 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:54,780 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:54,781 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:54,781 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:54,782 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:54,782 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:54,822 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:54,823 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:54,823 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:54,824 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:54,824 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:54,824 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:54,825 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:54,825 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:54,826 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:56,727 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:56,727 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:56,728 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:56,729 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:44:56,730 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:56,730 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:44:56,731 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:44:56] "[35m[1mGET /api/relation-types HTTP/1.1[0m" 500 -
+2025-04-15 00:44:56,734 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:56,735 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:56,736 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:56,736 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:56,736 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:56,737 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:56,737 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:56,738 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:56,742 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:56,742 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:56,742 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:56,743 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:44:56,836 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:56,837 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:56,837 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:56,839 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:56,840 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:56,867 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:56,868 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:56,868 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:56,869 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:56,870 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:57,744 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:57,745 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:57,746 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:57,746 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:57,746 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:57,746 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:57,747 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:57,747 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:57,747 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:58,778 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:58,779 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:58,779 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:58,780 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:58,781 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:44:58,903 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:58,903 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:58,903 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:58,904 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:44:58,904 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:58,904 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:44:58,905 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:58,905 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:58,905 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:58,906 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:58,906 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:58,906 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:58,907 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:58,907 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:58,933 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:58,933 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:44:58,933 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:58,933 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:44:58,933 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:44:58,934 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:44:58,934 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:44:58,934 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:44:58,935 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:44:58,935 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:44:58,935 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:44:58,935 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:44:58,935 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:44:58,936 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:44:59,803 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:44:59,803 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:44:59,803 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:44:59,804 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:44:59,804 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:00,829 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:00,829 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:00,829 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:00,830 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:45:00,955 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:00,955 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:00,956 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:00,956 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:00,956 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:00,971 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:00,971 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:00,971 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:00,972 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:00,972 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:01,831 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:01,831 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:01,832 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:01,832 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:01,832 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:01,833 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:01,833 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:01,834 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:01,834 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:01,856 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:01,856 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:01,857 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:01,857 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:45:01,858 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:01,858 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:45:01,859 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:45:01] "[35m[1mGET /api/graph?limit=100 HTTP/1.1[0m" 500 -
+2025-04-15 00:45:02,999 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:02,999 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:03,000 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:03,000 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:45:03,030 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:03,030 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:03,031 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:03,031 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:45:03,864 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:03,866 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:03,868 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:03,868 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:03,869 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:04,001 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:04,004 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:04,006 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:04,007 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:04,008 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:04,009 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:04,010 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:04,011 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:04,032 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:04,033 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:04,035 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:04,036 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:04,037 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:04,037 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:04,038 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:04,039 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:04,040 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:05,909 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:05,910 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:05,910 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:05,910 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:45:06,046 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:06,046 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:06,048 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:06,048 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:06,048 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:06,077 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:06,077 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:06,077 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:06,077 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:06,079 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:06,911 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:06,913 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:06,914 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:06,915 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:06,916 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:06,917 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:06,917 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:06,918 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:06,918 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:08,096 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:08,097 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:08,097 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:08,098 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:45:08,130 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:08,132 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:08,133 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:08,134 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:45:08,982 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:08,982 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:08,983 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:08,983 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:08,983 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:09,099 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:09,100 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:09,101 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:09,102 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:09,102 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:09,103 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:09,104 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:09,106 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:09,107 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:09,135 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:09,137 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:09,138 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:09,139 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:09,141 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:09,141 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:09,142 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:09,142 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:09,143 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:11,024 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:11,024 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:11,025 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:11,025 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:45:11,025 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:11,026 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:45:11,026 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:45:11] "[35m[1mGET /api/relation-types HTTP/1.1[0m" 500 -
+2025-04-15 00:45:11,147 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:11,147 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:11,147 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:11,148 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:11,148 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:11,177 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:11,178 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:11,179 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:11,179 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:11,179 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:12,188 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:12,188 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:12,188 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:12,189 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:12,189 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:12,189 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:12,190 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:12,190 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:13,206 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:13,208 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:13,210 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:13,212 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:45:13,214 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:13,215 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:45:13,216 - app_final - WARNING - Î´ÄÜ´ÓÊý¾Ý¿â»ñÈ¡½ÚµãÀàÐÍ£¬½«Ê¹ÓÃÄ¬ÈÏÀàÐÍÁÐ±í
+2025-04-15 00:45:13,217 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:45:13] "GET /api/node_types HTTP/1.1" 200 -
+2025-04-15 00:45:13,221 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:13,223 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:13,226 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:13,228 - __main__ - ERROR - ÎÞ·¨Á¬½Óµ½Neo4jÊý¾Ý¿â£¬ÇëÈ·±£Êý¾Ý¿âÕýÔÚÔËÐÐ (³¢ÊÔ 3/3)
+2025-04-15 00:45:13,229 - app_final - ERROR - ÎÞ·¨»ñÈ¡Neo4jÁ¬½Ó
+2025-04-15 00:45:13,230 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:13,230 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:13,231 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:13,232 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:13,233 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:13,233 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:13,234 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:13,234 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:14,232 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:14,233 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:14,236 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:14,236 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:14,236 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:15,289 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:15,290 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:15,291 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:15,291 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:15,292 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:16,269 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:16,270 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:16,270 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:16,271 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:45:17,272 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:17,272 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:17,273 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:17,273 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:17,273 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:17,273 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:17,273 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:17,274 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:17,274 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:17,342 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:17,343 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:17,343 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:17,343 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (1/3)...
+2025-04-15 00:45:18,346 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:18,349 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:18,352 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:18,355 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:18,358 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:18,360 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:18,363 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:18,370 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:18,373 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:19,327 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:19,328 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:19,330 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:19,331 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:19,332 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:20,420 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:20,420 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> [::1]:7687
+2025-04-15 00:45:20,420 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> [::1]:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:20,421 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 127.0.0.1:7687
+2025-04-15 00:45:20,421 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 127.0.0.1:7687
+2025-04-15 00:45:21,385 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:21,385 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:21,385 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:21,386 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
+2025-04-15 00:45:22,386 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-04-15 00:45:22,388 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:45:22,390 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: None
+2025-04-15 00:45:22,391 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: None
+2025-04-15 00:45:22,391 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire direct connection, access_mode='WRITE', database=AcquisitionDatabase(name=None, guessed=False)
+2025-04-15 00:45:22,392 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:45:22,393 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: localhost:7687
+2025-04-15 00:45:22,394 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: [::1]:7687
+2025-04-15 00:45:22,395 - neo4j.io - DEBUG - [#0000]  C: <OPEN> [::1]:7687
+2025-04-15 00:45:22,484 - neo4j.io - DEBUG - [#0000]  S: <ERROR> ConnectionRefusedError 10061 'ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£' None 10061 None
+2025-04-15 00:45:22,485 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
+2025-04-15 00:45:22,486 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ÓÉÓÚÄ¿±ê¼ÆËã»ú»ý¼«¾Ü¾ø£¬ÎÞ·¨Á¬½Ó¡£)
+2025-04-15 00:45:22,487 - __main__ - WARNING - Neo4jÁ¬½ÓÊ§°Ü£¬ÕýÔÚÖØÊÔ (2/3)...
