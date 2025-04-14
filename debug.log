@@ -166665,3 +166665,5 @@ Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reas
 2025-04-15 00:59:26,803 - werkzeug - INFO -  * Restarting with stat
 2025-04-15 00:59:27,833 - werkzeug - WARNING -  * Debugger is active!
 2025-04-15 00:59:27,838 - werkzeug - INFO -  * Debugger PIN: 133-101-651
+2025-04-15 01:10:45,053 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Microsoft\\Desktop\\ML\\nlp\\cursor\\知识图谱构建与可视化备份10\\app_final.py', reloading
+2025-04-15 01:10:45,205 - werkzeug - INFO -  * Restarting with stat

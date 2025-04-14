@@ -16,20 +16,33 @@ try:
 except ImportError:
     pass
 
-# 确保必要的目录存在
-for directory in ['logs', 'templates', 'static', 'uploads']:
-    if not os.path.exists(directory):
-        os.makedirs(directory)
+# 确保必要的目录存在 - 检查是否为只读文件系统
+try:
+    for directory in ['logs', 'templates', 'static', 'uploads']:
+        if not os.path.exists(directory):
+            try:
+                os.makedirs(directory)
+            except OSError as e:
+                # 如果是只读文件系统错误，则记录警告但不终止程序
+                if e.errno == 30:  # 只读文件系统错误码
+                    print(f"警告: 无法创建目录 '{directory}'，文件系统为只读。将使用临时目录或跳过。")
+                else:
+                    raise
+except Exception as e:
+    print(f"创建目录时出错: {str(e)}")
 
 # 配置日志
-logging.basicConfig(
-    level=logging.INFO,  # 使用INFO级别而非DEBUG
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler("debug.log"),
-        logging.StreamHandler()
-    ]
-)
+try:
+    logging.basicConfig(
+        level=logging.INFO,  # 使用INFO级别而非DEBUG
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.StreamHandler()  # 仅使用控制台输出，避免文件系统权限问题
+        ]
+    )
+except Exception as e:
+    print(f"配置日志时出错: {str(e)}")
+    
 logger = logging.getLogger(__name__)
 
 # 应用配置
