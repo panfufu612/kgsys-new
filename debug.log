@@ -165348,3 +165348,1320 @@ Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reas
 2025-04-15 00:45:22,485 - neo4j.io - DEBUG - [#0000]  C: <CLOSE> 127.0.0.1:7687
 2025-04-15 00:45:22,486 - neo4j.io - DEBUG - [#0000]  S: <CONNECTION FAILED> 127.0.0.1:7687 ServiceUnavailable: Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [WinError 10061] ”…”⁄ƒø±Íº∆À„ª˙ª˝º´æ‹æ¯£¨Œﬁ∑®¡¨Ω”°£)
 2025-04-15 00:45:22,487 - __main__ - WARNING - Neo4j¡¨Ω” ß∞‹£¨’˝‘⁄÷ÿ ‘ (2/3)...
+2025-04-15 00:46:42,319 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5050
+2025-04-15 00:46:42,319 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-04-15 00:46:42,321 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 00:46:43,187 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 00:46:43,192 - werkzeug - INFO -  * Debugger PIN: 133-101-651
+2025-04-15 00:46:46,103 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:46] "GET / HTTP/1.1" 200 -
+2025-04-15 00:46:46,180 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:46] "[36mGET /static/css/graph.css HTTP/1.1[0m" 304 -
+2025-04-15 00:46:46,183 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:46] "[36mGET /static/js/graph.js HTTP/1.1[0m" 304 -
+2025-04-15 00:46:46,242 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, routing address IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:46,243 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:46,243 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:46,244 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:46,244 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:46,269 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:46,269 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:46,270 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:46,342 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:46,560 - neo4j.io - DEBUG - [#FD71]  C: <SECURE> b5aca062.databases.neo4j.io
+2025-04-15 00:46:46,793 - neo4j.io - DEBUG - [#FD71]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:46,793 - neo4j.io - DEBUG - [#FD71]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:47,012 - neo4j.io - DEBUG - [#FD71]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:47,014 - neo4j.io - DEBUG - [#FD71]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:47,014 - neo4j.io - DEBUG - [#FD71]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:47,015 - neo4j.io - DEBUG - [#FD71]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:47,015 - neo4j.io - DEBUG - [#FD71]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:47,015 - neo4j.io - DEBUG - [#FD71]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:47,234 - neo4j.io - DEBUG - [#FD71]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32250', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:47,234 - neo4j.io - DEBUG - [#FD71]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:47,236 - neo4j.io - DEBUG - [#FD71]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:47,236 - neo4j.io - DEBUG - [#FD71]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:47,236 - neo4j.io - DEBUG - [#FD71]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:47,457 - neo4j.io - DEBUG - [#FD71]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:47,458 - neo4j.pool - DEBUG - [#FD71]  _: <POOL> released bolt-32250
+2025-04-15 00:46:47,458 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.156, ttl=10)
+2025-04-15 00:46:47,459 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.156, ttl=10))
+2025-04-15 00:46:47,460 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:47,460 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:47,460 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:47,461 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:47,462 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:47,462 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:47,462 - neo4j.pool - DEBUG - [#FD71]  _: <POOL> picked existing connection bolt-32250
+2025-04-15 00:46:47,464 - neo4j.pool - DEBUG - [#FD71]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:47,464 - neo4j.pool - DEBUG - [#FD71]  _: <POOL> handing out existing connection
+2025-04-15 00:46:47,465 - neo4j.io - DEBUG - [#FD71]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:47,682 - neo4j.io - DEBUG - [#FD71]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:47,682 - neo4j.pool - DEBUG - [#FD71]  _: <POOL> released bolt-32250
+2025-04-15 00:46:47,682 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10)
+2025-04-15 00:46:47,682 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10))
+2025-04-15 00:46:47,683 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:47,683 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:47,683 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:47,683 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428021.375, ttl=10, perf_time=428021.375 => False
+2025-04-15 00:46:47,683 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:47,683 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10)
+2025-04-15 00:46:47,684 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:47,684 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428021.375, ttl=10, perf_time=428021.375 => False
+2025-04-15 00:46:47,684 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:47,684 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10)
+2025-04-15 00:46:47,684 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:47,685 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:47,685 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:47,685 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:47,685 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:47,685 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:47,839 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:47,839 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:47,840 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:47,840 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:48,064 - neo4j.io - DEBUG - [#FD73]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:48,079 - neo4j.io - DEBUG - [#FD72]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:48,285 - neo4j.io - DEBUG - [#FD73]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:48,285 - neo4j.io - DEBUG - [#FD73]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:48,299 - neo4j.io - DEBUG - [#FD72]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:48,299 - neo4j.io - DEBUG - [#FD72]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:48,505 - neo4j.io - DEBUG - [#FD73]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:48,505 - neo4j.io - DEBUG - [#FD73]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:48,506 - neo4j.io - DEBUG - [#FD73]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:48,506 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:48,507 - neo4j.io - DEBUG - [#FD73]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:48,507 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:48,517 - neo4j.io - DEBUG - [#FD72]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:48,517 - neo4j.io - DEBUG - [#FD72]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:48,518 - neo4j.io - DEBUG - [#FD72]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:48,518 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:48,518 - neo4j.io - DEBUG - [#FD72]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:48,519 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:48,727 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32253', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:48,727 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:48,727 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:48,728 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:48,728 - neo4j.io - DEBUG - [#FD73]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:48,728 - neo4j.io - DEBUG - [#FD73]  C: RUN 'MATCH (n) RETURN count(n) LIMIT 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:48,728 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:48,728 - neo4j.io - DEBUG - [#FD73]  C: PULL {'n': 1000}
+2025-04-15 00:46:48,737 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32254', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:48,738 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:48,739 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:48,739 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:48,740 - neo4j.io - DEBUG - [#FD72]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:48,740 - neo4j.io - DEBUG - [#FD72]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:48,740 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:48,741 - neo4j.io - DEBUG - [#FD72]  C: PULL {'n': 1000}
+2025-04-15 00:46:48,948 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {}
+2025-04-15 00:46:48,956 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {'t_first': 8, 'fields': ['count(n)']}
+2025-04-15 00:46:48,957 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:48,957 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {}
+2025-04-15 00:46:48,961 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {'t_first': 3, 'fields': ['1']}
+2025-04-15 00:46:48,962 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:48,962 - neo4j.io - DEBUG - [#FD72]  S: RECORD * 1
+2025-04-15 00:46:48,963 - neo4j.io - DEBUG - [#FD73]  S: RECORD * 1
+2025-04-15 00:46:48,963 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:48,965 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 6, 'db': 'neo4j'}
+2025-04-15 00:46:48,967 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:48,968 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:48,971 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> released bolt-32254
+2025-04-15 00:46:48,973 - neo4j.pool - DEBUG - [#FD73]  _: <POOL> released bolt-32253
+2025-04-15 00:46:48,974 - __main__ - INFO - ≥…π¶¡¨Ω”µΩNeo4j ˝æ›ø‚
+2025-04-15 00:46:48,974 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:48,975 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:48,975 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:48,976 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:48,977 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:48,978 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428021.375, ttl=10, perf_time=428022.671 => False
+2025-04-15 00:46:48,980 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:48,982 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10)
+2025-04-15 00:46:48,983 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:48,983 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:48,983 - neo4j.pool - DEBUG - [#FD73]  _: <POOL> picked existing connection bolt-32253
+2025-04-15 00:46:48,984 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428021.375, ttl=10, perf_time=428022.671 => False
+2025-04-15 00:46:48,984 - neo4j.pool - DEBUG - [#FD73]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:48,985 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:48,985 - neo4j.pool - DEBUG - [#FD73]  _: <POOL> handing out existing connection
+2025-04-15 00:46:48,986 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10)
+2025-04-15 00:46:48,987 - neo4j.io - DEBUG - [#FD73]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:48,988 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:48,988 - neo4j.io - DEBUG - [#FD73]  C: RUN '\n            MATCH (n)-[r]->(m)\n            RETURN n, r, m \n            LIMIT $limit*3\n            ' {'limit': 100} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:48,988 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> picked existing connection bolt-32254
+2025-04-15 00:46:48,988 - neo4j.io - DEBUG - [#FD73]  C: PULL {'n': 1000}
+2025-04-15 00:46:48,989 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:48,989 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> handing out existing connection
+2025-04-15 00:46:48,990 - neo4j.io - DEBUG - [#FD72]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:48,990 - neo4j.io - DEBUG - [#FD72]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:46:48,990 - neo4j.io - DEBUG - [#FD72]  C: PULL {'n': 1000}
+2025-04-15 00:46:49,208 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {}
+2025-04-15 00:46:49,208 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {}
+2025-04-15 00:46:49,211 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {'t_first': 4, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:46:49,212 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:49,212 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:49,213 - neo4j.io - DEBUG - [#FD72]  S: RECORD * 1
+2025-04-15 00:46:49,214 - neo4j.io - DEBUG - [#FD73]  S: SUCCESS {'t_first': 6, 'fields': ['n', 'r', 'm']}
+2025-04-15 00:46:49,214 - neo4j.io - DEBUG - [#FD72]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:49,214 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:49,214 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:49,216 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> released bolt-32254
+2025-04-15 00:46:49,217 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:49,217 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:49,217 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:49,218 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428021.375, ttl=10, perf_time=428022.906 => False
+2025-04-15 00:46:49,218 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:49,218 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428021.375, ttl=10)
+2025-04-15 00:46:49,218 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:49,219 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> picked existing connection bolt-32254
+2025-04-15 00:46:49,219 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:49,219 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> handing out existing connection
+2025-04-15 00:46:49,220 - neo4j.io - DEBUG - [#FD72]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:49,221 - neo4j.io - DEBUG - [#FD72]  C: RUN '\n        MATCH ()-[r]->()\n        RETURN DISTINCT type(r) AS type\n        ORDER BY type\n        ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:49,221 - neo4j.io - DEBUG - [#FD72]  C: PULL {'n': 1000}
+2025-04-15 00:46:49,222 - neo4j.io - DEBUG - [#FD73]  S: RECORD * 1
+2025-04-15 00:46:49,223 - neo4j.io - DEBUG - [#FD73]  S: RECORD * 1
+2025-04-15 00:46:49,225 - neo4j.io - DEBUG - [#FD73]  S: RECORD * 1
+2025-04-15 00:46:49,232 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:46:49,234 - neo4j.io - DEBUG - [#FD71]  C: GOODBYE
+2025-04-15 00:46:49,236 - neo4j.io - DEBUG - [#FD71]  C: <CLOSE>
+2025-04-15 00:46:49,238 - neo4j.io - DEBUG - [#FD73]  C: GOODBYE
+2025-04-15 00:46:49,238 - neo4j.io - DEBUG - [#FD73]  C: <CLOSE>
+2025-04-15 00:46:49,238 - neo4j.io - DEBUG - [#FD72]  C: GOODBYE
+2025-04-15 00:46:49,239 - neo4j.io - DEBUG - [#FD73]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:49,239 - neo4j.io - DEBUG - [#FD72]  C: <CLOSE>
+2025-04-15 00:46:49,240 - neo4j.pool - DEBUG - [#FD73]  _: <POOL> released bolt-32253
+2025-04-15 00:46:49,241 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:49,241 - neo4j.io - DEBUG - [#FD72]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:49,242 - __main__ - INFO - Neo4j ˝æ›ø‚¡¨Ω”“—πÿ±’
+2025-04-15 00:46:49,243 - neo4j.pool - DEBUG - [#FD72]  _: <POOL> released bolt-32254
+2025-04-15 00:46:49,243 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:49] "GET /stats HTTP/1.1" 200 -
+2025-04-15 00:46:49,244 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:49,289 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:49] "[36mGET /static/css/graph.css HTTP/1.1[0m" 304 -
+2025-04-15 00:46:49,291 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:49] "[36mGET /static/js/stats.js HTTP/1.1[0m" 304 -
+2025-04-15 00:46:49,335 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, routing address IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:49,336 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:49,336 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:49,337 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:49,339 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:49,339 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:49,340 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:49,340 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:49,367 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:49,583 - neo4j.io - DEBUG - [#FD79]  C: <SECURE> b5aca062.databases.neo4j.io
+2025-04-15 00:46:49,802 - neo4j.io - DEBUG - [#FD79]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:49,803 - neo4j.io - DEBUG - [#FD79]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:50,028 - neo4j.io - DEBUG - [#FD79]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:50,028 - neo4j.io - DEBUG - [#FD79]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:50,028 - neo4j.io - DEBUG - [#FD79]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:50,029 - neo4j.io - DEBUG - [#FD79]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:50,029 - neo4j.io - DEBUG - [#FD79]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:50,029 - neo4j.io - DEBUG - [#FD79]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:50,243 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:50,245 - neo4j.io - DEBUG - [#FD79]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32255', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:50,246 - neo4j.io - DEBUG - [#FD79]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:50,246 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:50,246 - neo4j.io - DEBUG - [#FD79]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:50,247 - neo4j.io - DEBUG - [#FD79]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:50,247 - neo4j.io - DEBUG - [#FD79]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:50,464 - neo4j.io - DEBUG - [#FD79]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:50,464 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> released bolt-32255
+2025-04-15 00:46:50,465 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.156, ttl=10)
+2025-04-15 00:46:50,465 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.156, ttl=10))
+2025-04-15 00:46:50,465 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:50,465 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:50,465 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:50,465 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:50,479 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:50,479 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:50,480 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> picked existing connection bolt-32255
+2025-04-15 00:46:50,480 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:50,480 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> handing out existing connection
+2025-04-15 00:46:50,480 - neo4j.io - DEBUG - [#FD79]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:50,697 - neo4j.io - DEBUG - [#FD79]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:50,698 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> released bolt-32255
+2025-04-15 00:46:50,699 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.39, ttl=10)
+2025-04-15 00:46:50,700 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.39, ttl=10))
+2025-04-15 00:46:50,701 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:50,702 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:50,703 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:50,704 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:50,705 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:50,706 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:50,706 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> picked existing connection bolt-32255
+2025-04-15 00:46:50,706 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:50,706 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> handing out existing connection
+2025-04-15 00:46:50,706 - neo4j.io - DEBUG - [#FD79]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:50,923 - neo4j.io - DEBUG - [#FD79]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:50,924 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> released bolt-32255
+2025-04-15 00:46:50,924 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.609, ttl=10)
+2025-04-15 00:46:50,925 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.609, ttl=10))
+2025-04-15 00:46:50,925 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:50,925 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:50,925 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:50,926 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:50,926 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:50,926 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:50,927 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> picked existing connection bolt-32255
+2025-04-15 00:46:50,927 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:50,927 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> handing out existing connection
+2025-04-15 00:46:50,927 - neo4j.io - DEBUG - [#FD79]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:51,144 - neo4j.io - DEBUG - [#FD79]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:51,145 - neo4j.pool - DEBUG - [#FD79]  _: <POOL> released bolt-32255
+2025-04-15 00:46:51,145 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:51,145 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10))
+2025-04-15 00:46:51,146 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:51,146 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:51,146 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:51,146 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428024.843 => False
+2025-04-15 00:46:51,146 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:51,147 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:51,147 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:51,147 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428024.843 => False
+2025-04-15 00:46:51,147 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:51,147 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428024.843 => False
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:51,148 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:51,149 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:51,149 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428024.843 => False
+2025-04-15 00:46:51,149 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:51,150 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:51,150 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:51,151 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:51,151 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:51,151 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:51,151 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:51,152 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:51,152 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:51,152 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:51,152 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:51,153 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:51,153 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:51,153 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:51,154 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:51,154 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:51,357 - neo4j.io - DEBUG - [#FD7E]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:51,363 - neo4j.io - DEBUG - [#FD7F]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:51,377 - neo4j.io - DEBUG - [#FD7C]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:51,401 - neo4j.io - DEBUG - [#FD7D]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:51,580 - neo4j.io - DEBUG - [#FD7E]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:51,583 - neo4j.io - DEBUG - [#FD7E]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:51,592 - neo4j.io - DEBUG - [#FD7F]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:51,594 - neo4j.io - DEBUG - [#FD7F]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:51,597 - neo4j.io - DEBUG - [#FD7C]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:51,601 - neo4j.io - DEBUG - [#FD7C]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:51,752 - neo4j.io - DEBUG - [#FD7D]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:51,754 - neo4j.io - DEBUG - [#FD7D]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:51,791 - neo4j.io - DEBUG - [#FD7E]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:51,792 - neo4j.io - DEBUG - [#FD7E]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:51,794 - neo4j.io - DEBUG - [#FD7E]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:51,795 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:51,796 - neo4j.io - DEBUG - [#FD7E]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:51,797 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:51,807 - neo4j.io - DEBUG - [#FD7F]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:51,807 - neo4j.io - DEBUG - [#FD7C]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:51,810 - neo4j.io - DEBUG - [#FD7F]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:51,811 - neo4j.io - DEBUG - [#FD7C]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:51,812 - neo4j.io - DEBUG - [#FD7F]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:51,813 - neo4j.io - DEBUG - [#FD7C]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:51,813 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:51,814 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:51,815 - neo4j.io - DEBUG - [#FD7F]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:51,815 - neo4j.io - DEBUG - [#FD7C]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:51,817 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:51,818 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:52,052 - neo4j.io - DEBUG - [#FD7E]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32257', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:52,053 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32258', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:52,053 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32259', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:52,053 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:52,054 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:52,055 - neo4j.io - DEBUG - [#FD7D]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:52,055 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:52,056 - neo4j.io - DEBUG - [#FD7E]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:52,057 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:52,057 - neo4j.io - DEBUG - [#FD7D]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:52,058 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:52,059 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:52,059 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:52,062 - neo4j.io - DEBUG - [#FD7D]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:52,062 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:52,063 - neo4j.io - DEBUG - [#FD7E]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,063 - neo4j.io - DEBUG - [#FD7F]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,064 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:52,065 - neo4j.io - DEBUG - [#FD7C]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,066 - neo4j.io - DEBUG - [#FD7E]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:52,067 - neo4j.io - DEBUG - [#FD7F]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:52,067 - neo4j.io - DEBUG - [#FD7D]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:52,068 - neo4j.io - DEBUG - [#FD7C]  C: RUN 'MATCH (n) RETURN count(n) LIMIT 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:52,069 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:52,070 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:52,071 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:52,072 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:52,073 - neo4j.io - DEBUG - [#FD7E]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,074 - neo4j.io - DEBUG - [#FD7F]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,075 - neo4j.io - DEBUG - [#FD7C]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,280 - neo4j.io - DEBUG - [#FD7E]  S: SUCCESS {}
+2025-04-15 00:46:52,281 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {}
+2025-04-15 00:46:52,285 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {}
+2025-04-15 00:46:52,285 - neo4j.io - DEBUG - [#FD7E]  S: SUCCESS {'t_first': 3, 'fields': ['1']}
+2025-04-15 00:46:52,286 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {'t_first': 4, 'fields': ['count(n)']}
+2025-04-15 00:46:52,287 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:52,287 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {'t_first': 3, 'fields': ['1']}
+2025-04-15 00:46:52,288 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:52,290 - neo4j.io - DEBUG - [#FD7E]  S: RECORD * 1
+2025-04-15 00:46:52,290 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:52,291 - neo4j.io - DEBUG - [#FD7C]  S: RECORD * 1
+2025-04-15 00:46:52,292 - neo4j.io - DEBUG - [#FD7E]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:52,293 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,293 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:46:52,294 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:52,295 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:52,296 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:52,297 - neo4j.pool - DEBUG - [#FD7E]  _: <POOL> released bolt-32257
+2025-04-15 00:46:52,298 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:52,299 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> released bolt-32259
+2025-04-15 00:46:52,301 - __main__ - INFO - ≥…π¶¡¨Ω”µΩNeo4j ˝æ›ø‚
+2025-04-15 00:46:52,301 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:52,301 - neo4j.pool - DEBUG - [#FD7F]  _: <POOL> released bolt-32258
+2025-04-15 00:46:52,302 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:52,304 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:52,304 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:52,304 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:52,305 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:52,306 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:52,307 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428026.0 => False
+2025-04-15 00:46:52,309 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:52,309 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:52,311 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:52,312 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:52,312 - neo4j.pool - DEBUG - [#FD7E]  _: <POOL> picked existing connection bolt-32257
+2025-04-15 00:46:52,313 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428026.0 => False
+2025-04-15 00:46:52,314 - neo4j.pool - DEBUG - [#FD7E]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:52,314 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:52,315 - neo4j.pool - DEBUG - [#FD7E]  _: <POOL> handing out existing connection
+2025-04-15 00:46:52,316 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:52,317 - neo4j.io - DEBUG - [#FD7E]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,318 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:52,319 - neo4j.io - DEBUG - [#FD7E]  C: RUN '\n        MATCH (n)\n        WHERE size(labels(n)) > 0\n        WITH labels(n)[0] AS type, count(n) AS count\n        WHERE type IS NOT NULL\n        RETURN type, count\n        ORDER BY count DESC, type\n        ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:52,319 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428026.015 => False
+2025-04-15 00:46:52,320 - neo4j.io - DEBUG - [#FD7E]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,321 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:52,323 - neo4j.io - DEBUG - [#FD7D]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32260', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:52,324 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:52,325 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:52,327 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:52,327 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:52,328 - neo4j.io - DEBUG - [#FD7D]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:52,329 - neo4j.pool - DEBUG - [#FD7F]  _: <POOL> picked existing connection bolt-32258
+2025-04-15 00:46:52,329 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> picked existing connection bolt-32259
+2025-04-15 00:46:52,330 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:52,331 - neo4j.pool - DEBUG - [#FD7F]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:52,332 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:52,333 - neo4j.io - DEBUG - [#FD7D]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,334 - neo4j.pool - DEBUG - [#FD7F]  _: <POOL> handing out existing connection
+2025-04-15 00:46:52,336 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> handing out existing connection
+2025-04-15 00:46:52,337 - neo4j.io - DEBUG - [#FD7D]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:52,338 - neo4j.io - DEBUG - [#FD7F]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,339 - neo4j.io - DEBUG - [#FD7C]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,341 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:52,342 - neo4j.io - DEBUG - [#FD7F]  C: RUN '\n        MATCH ()-[r]->()\n        RETURN DISTINCT type(r) AS type\n        ORDER BY type\n        ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:52,344 - neo4j.io - DEBUG - [#FD7C]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:46:52,345 - neo4j.io - DEBUG - [#FD7D]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,347 - neo4j.io - DEBUG - [#FD7F]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,348 - neo4j.io - DEBUG - [#FD7C]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,529 - neo4j.io - DEBUG - [#FD7E]  S: SUCCESS {}
+2025-04-15 00:46:52,553 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {}
+2025-04-15 00:46:52,556 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {}
+2025-04-15 00:46:52,557 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {'t_first': 4, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:46:52,558 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:52,560 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {'t_first': 3, 'fields': ['type']}
+2025-04-15 00:46:52,560 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:52,561 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:52,562 - neo4j.io - DEBUG - [#FD7C]  S: RECORD * 1
+2025-04-15 00:46:52,563 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,563 - neo4j.io - DEBUG - [#FD7C]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:52,564 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,564 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:52,565 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> released bolt-32259
+2025-04-15 00:46:52,566 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,567 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:52,568 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,568 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:52,569 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,570 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:52,571 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,572 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428024.843, ttl=10, perf_time=428026.265 => False
+2025-04-15 00:46:52,574 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,575 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:52,575 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,576 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428024.843, ttl=10)
+2025-04-15 00:46:52,578 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,578 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:52,579 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,580 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> picked existing connection bolt-32259
+2025-04-15 00:46:52,581 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,581 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:52,582 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,583 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> handing out existing connection
+2025-04-15 00:46:52,584 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,585 - neo4j.io - DEBUG - [#FD7C]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:52,586 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,587 - neo4j.io - DEBUG - [#FD7C]  C: RUN 'MATCH (n) RETURN count(n) as count' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:52,588 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,589 - neo4j.io - DEBUG - [#FD7C]  C: PULL {'n': 1000}
+2025-04-15 00:46:52,590 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,592 - neo4j.io - DEBUG - [#FD7F]  S: RECORD * 1
+2025-04-15 00:46:52,593 - neo4j.io - DEBUG - [#FD7F]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 2, 'db': 'neo4j'}
+2025-04-15 00:46:52,594 - neo4j.io - DEBUG - [#FD7F]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:52,595 - neo4j.pool - DEBUG - [#FD7F]  _: <POOL> released bolt-32258
+2025-04-15 00:46:52,597 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:46:52,597 - neo4j.io - DEBUG - [#FD79]  C: GOODBYE
+2025-04-15 00:46:52,598 - neo4j.io - DEBUG - [#FD7D]  S: SUCCESS {}
+2025-04-15 00:46:52,599 - neo4j.io - DEBUG - [#FD79]  C: <CLOSE>
+2025-04-15 00:46:52,599 - neo4j.io - DEBUG - [#FD7D]  S: SUCCESS {'t_first': 3, 'fields': ['1']}
+2025-04-15 00:46:52,600 - neo4j.io - DEBUG - [#FD7E]  C: GOODBYE
+2025-04-15 00:46:52,600 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:52,604 - neo4j.io - DEBUG - [#FD7E]  C: <CLOSE>
+2025-04-15 00:46:52,605 - neo4j.io - DEBUG - [#FD7F]  C: GOODBYE
+2025-04-15 00:46:52,605 - neo4j.io - DEBUG - [#FD7E]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:52,606 - neo4j.io - DEBUG - [#FD7F]  C: <CLOSE>
+2025-04-15 00:46:52,606 - neo4j.pool - DEBUG - [#FD7E]  _: <POOL> released bolt-32257
+2025-04-15 00:46:52,606 - neo4j.io - DEBUG - [#FD7C]  C: GOODBYE
+2025-04-15 00:46:52,607 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:52,608 - neo4j.io - DEBUG - [#FD7C]  C: <CLOSE>
+2025-04-15 00:46:52,609 - neo4j.io - DEBUG - [#FD7D]  C: GOODBYE
+2025-04-15 00:46:52,611 - neo4j.io - DEBUG - [#FD7C]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:52,611 - neo4j.io - DEBUG - [#FD7D]  C: <CLOSE>
+2025-04-15 00:46:52,612 - neo4j.pool - DEBUG - [#FD7C]  _: <POOL> released bolt-32259
+2025-04-15 00:46:52,613 - __main__ - INFO - Neo4j ˝æ›ø‚¡¨Ω”“—πÿ±’
+2025-04-15 00:46:52,614 - neo4j.io - DEBUG - [#FD7D]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:52,614 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:52,616 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:52] "GET /api/relation-types HTTP/1.1" 200 -
+2025-04-15 00:46:52,617 - neo4j.pool - DEBUG - [#FD7D]  _: <POOL> released bolt-32260
+2025-04-15 00:46:52,618 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (2/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:52,624 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, routing address IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:52,625 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:52,625 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:52,625 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:52,627 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:52,629 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:52,629 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:52,681 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:52,926 - neo4j.io - DEBUG - [#FD82]  C: <SECURE> b5aca062.databases.neo4j.io
+2025-04-15 00:46:53,182 - neo4j.io - DEBUG - [#FD82]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:53,183 - neo4j.io - DEBUG - [#FD82]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:53,462 - neo4j.io - DEBUG - [#FD82]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:53,463 - neo4j.io - DEBUG - [#FD82]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:53,464 - neo4j.io - DEBUG - [#FD82]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:53,465 - neo4j.io - DEBUG - [#FD82]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:53,465 - neo4j.io - DEBUG - [#FD82]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:53,466 - neo4j.io - DEBUG - [#FD82]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:53,609 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:53,618 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:53,619 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:53,690 - neo4j.io - DEBUG - [#FD82]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32261', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:53,690 - neo4j.io - DEBUG - [#FD82]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:53,691 - neo4j.io - DEBUG - [#FD82]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:53,691 - neo4j.io - DEBUG - [#FD82]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:53,692 - neo4j.io - DEBUG - [#FD82]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:53,912 - neo4j.io - DEBUG - [#FD82]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:53,913 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> released bolt-32261
+2025-04-15 00:46:53,913 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428027.609, ttl=10)
+2025-04-15 00:46:53,913 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428027.609, ttl=10))
+2025-04-15 00:46:53,914 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:53,914 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:53,914 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:53,914 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:53,915 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:53,916 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:53,916 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> picked existing connection bolt-32261
+2025-04-15 00:46:53,916 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:53,917 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> handing out existing connection
+2025-04-15 00:46:53,917 - neo4j.io - DEBUG - [#FD82]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:54,137 - neo4j.io - DEBUG - [#FD82]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:54,137 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> released bolt-32261
+2025-04-15 00:46:54,138 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428027.828, ttl=10)
+2025-04-15 00:46:54,138 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428027.828, ttl=10))
+2025-04-15 00:46:54,138 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:54,138 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:54,139 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:54,139 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:54,139 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:54,139 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:54,141 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> picked existing connection bolt-32261
+2025-04-15 00:46:54,141 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:54,141 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> handing out existing connection
+2025-04-15 00:46:54,141 - neo4j.io - DEBUG - [#FD82]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:54,361 - neo4j.io - DEBUG - [#FD82]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:54,361 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> released bolt-32261
+2025-04-15 00:46:54,362 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.062, ttl=10)
+2025-04-15 00:46:54,362 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.062, ttl=10))
+2025-04-15 00:46:54,363 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:54,363 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:54,363 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:54,363 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:54,364 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:54,364 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:54,365 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> picked existing connection bolt-32261
+2025-04-15 00:46:54,365 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:54,365 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> handing out existing connection
+2025-04-15 00:46:54,365 - neo4j.io - DEBUG - [#FD82]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:54,586 - neo4j.io - DEBUG - [#FD82]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:54,588 - neo4j.pool - DEBUG - [#FD82]  _: <POOL> released bolt-32261
+2025-04-15 00:46:54,590 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:54,592 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10))
+2025-04-15 00:46:54,593 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:54,595 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:54,596 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:54,599 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428028.296 => False
+2025-04-15 00:46:54,600 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:54,601 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:54,604 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:54,605 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428028.296 => False
+2025-04-15 00:46:54,608 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:54,610 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:54,612 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:54,613 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:54,615 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:54,617 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428028.312 => False
+2025-04-15 00:46:54,621 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:54,622 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:54,625 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:54,627 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:54,627 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:54,628 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:54,628 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:54,630 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:54,632 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428028.328 => False
+2025-04-15 00:46:54,633 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:54,635 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:54,637 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:54,642 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:54,643 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:54,643 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:54,644 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:54,645 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:54,647 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:54,648 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:54,649 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:54,649 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:54,654 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:54,656 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:54,657 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:54,857 - neo4j.io - DEBUG - [#FD85]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:54,869 - neo4j.io - DEBUG - [#FD84]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:54,870 - neo4j.io - DEBUG - [#FD87]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:54,879 - neo4j.io - DEBUG - [#FD86]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:55,069 - neo4j.io - DEBUG - [#FD85]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:55,070 - neo4j.io - DEBUG - [#FD85]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:55,089 - neo4j.io - DEBUG - [#FD87]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:55,090 - neo4j.io - DEBUG - [#FD87]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:55,091 - neo4j.io - DEBUG - [#FD86]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:55,091 - neo4j.io - DEBUG - [#FD84]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:55,091 - neo4j.io - DEBUG - [#FD86]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:55,092 - neo4j.io - DEBUG - [#FD84]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:55,277 - neo4j.io - DEBUG - [#FD85]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:55,278 - neo4j.io - DEBUG - [#FD85]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:55,280 - neo4j.io - DEBUG - [#FD85]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:55,280 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,281 - neo4j.io - DEBUG - [#FD85]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:55,281 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:55,301 - neo4j.io - DEBUG - [#FD86]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:55,301 - neo4j.io - DEBUG - [#FD86]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:55,302 - neo4j.io - DEBUG - [#FD86]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:55,302 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,302 - neo4j.io - DEBUG - [#FD86]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:55,303 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:55,304 - neo4j.io - DEBUG - [#FD87]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:55,305 - neo4j.io - DEBUG - [#FD87]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:55,306 - neo4j.io - DEBUG - [#FD87]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:55,306 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,306 - neo4j.io - DEBUG - [#FD87]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:55,307 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:55,311 - neo4j.io - DEBUG - [#FD84]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:55,311 - neo4j.io - DEBUG - [#FD84]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:55,311 - neo4j.io - DEBUG - [#FD84]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:55,311 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,312 - neo4j.io - DEBUG - [#FD84]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:55,312 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:55,488 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32262', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:55,488 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,488 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:55,489 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:55,489 - neo4j.io - DEBUG - [#FD85]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,490 - neo4j.io - DEBUG - [#FD85]  C: RUN 'MATCH (n) RETURN count(n) LIMIT 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:55,490 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:55,490 - neo4j.io - DEBUG - [#FD85]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,511 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32263', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:55,512 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,512 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:55,513 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:55,513 - neo4j.io - DEBUG - [#FD86]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,513 - neo4j.io - DEBUG - [#FD86]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:55,514 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:55,514 - neo4j.io - DEBUG - [#FD86]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,523 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32265', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:55,524 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,524 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:55,525 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:55,525 - neo4j.io - DEBUG - [#FD87]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,526 - neo4j.io - DEBUG - [#FD87]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:55,526 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:55,526 - neo4j.io - DEBUG - [#FD87]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,530 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32264', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:55,531 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:55,532 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:55,532 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:55,532 - neo4j.io - DEBUG - [#FD84]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,532 - neo4j.io - DEBUG - [#FD84]  C: RUN 'RETURN 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:55,533 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:55,533 - neo4j.io - DEBUG - [#FD84]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,697 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {}
+2025-04-15 00:46:55,699 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {'t_first': 3, 'fields': ['count(n)']}
+2025-04-15 00:46:55,700 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,701 - neo4j.io - DEBUG - [#FD85]  S: RECORD * 1
+2025-04-15 00:46:55,702 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:46:55,703 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,703 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> released bolt-32262
+2025-04-15 00:46:55,704 - __main__ - INFO - ≥…π¶¡¨Ω”µΩNeo4j ˝æ›ø‚
+2025-04-15 00:46:55,705 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:55,706 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:55,706 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:55,706 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428029.406 => False
+2025-04-15 00:46:55,707 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:55,707 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:55,708 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:55,708 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> picked existing connection bolt-32262
+2025-04-15 00:46:55,709 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:55,709 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> handing out existing connection
+2025-04-15 00:46:55,710 - neo4j.io - DEBUG - [#FD85]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,710 - neo4j.io - DEBUG - [#FD85]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:46:55,711 - neo4j.io - DEBUG - [#FD85]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,722 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {}
+2025-04-15 00:46:55,725 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {'t_first': 3, 'fields': ['1']}
+2025-04-15 00:46:55,726 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,727 - neo4j.io - DEBUG - [#FD86]  S: RECORD * 1
+2025-04-15 00:46:55,728 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:55,728 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,729 - neo4j.pool - DEBUG - [#FD86]  _: <POOL> released bolt-32263
+2025-04-15 00:46:55,730 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:55,732 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:55,732 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:55,732 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428029.421 => False
+2025-04-15 00:46:55,734 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:55,735 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:55,736 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:55,736 - neo4j.pool - DEBUG - [#FD86]  _: <POOL> picked existing connection bolt-32263
+2025-04-15 00:46:55,737 - neo4j.pool - DEBUG - [#FD86]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:55,738 - neo4j.pool - DEBUG - [#FD86]  _: <POOL> handing out existing connection
+2025-04-15 00:46:55,739 - neo4j.io - DEBUG - [#FD86]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,740 - neo4j.io - DEBUG - [#FD86]  C: RUN '\n            MATCH (n)-[r]->(m)\n            RETURN n, r, m \n            LIMIT $limit*3\n            ' {'limit': 100} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:55,741 - neo4j.io - DEBUG - [#FD86]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,746 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {}
+2025-04-15 00:46:55,747 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {'t_first': 4, 'fields': ['1']}
+2025-04-15 00:46:55,748 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,748 - neo4j.io - DEBUG - [#FD87]  S: RECORD * 1
+2025-04-15 00:46:55,748 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:46:55,749 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,749 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> released bolt-32265
+2025-04-15 00:46:55,750 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:55,750 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:55,750 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:55,751 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428029.437 => False
+2025-04-15 00:46:55,752 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:55,752 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {}
+2025-04-15 00:46:55,752 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:55,753 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:55,753 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> picked existing connection bolt-32265
+2025-04-15 00:46:55,753 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:55,754 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> handing out existing connection
+2025-04-15 00:46:55,754 - neo4j.io - DEBUG - [#FD87]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,755 - neo4j.io - DEBUG - [#FD87]  C: RUN 'MATCH (n) RETURN count(n) as count' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:55,755 - neo4j.io - DEBUG - [#FD87]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,758 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {'t_first': 3, 'fields': ['1']}
+2025-04-15 00:46:55,758 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,758 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,758 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:55,759 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,759 - neo4j.pool - DEBUG - [#FD84]  _: <POOL> released bolt-32264
+2025-04-15 00:46:55,760 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:55,760 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:55,760 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:55,761 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428029.453 => False
+2025-04-15 00:46:55,761 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:55,761 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:55,762 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:55,762 - neo4j.pool - DEBUG - [#FD84]  _: <POOL> picked existing connection bolt-32264
+2025-04-15 00:46:55,762 - neo4j.pool - DEBUG - [#FD84]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:55,763 - neo4j.pool - DEBUG - [#FD84]  _: <POOL> handing out existing connection
+2025-04-15 00:46:55,763 - neo4j.io - DEBUG - [#FD84]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,763 - neo4j.io - DEBUG - [#FD84]  C: RUN '\n        MATCH (n)\n        WHERE size(labels(n)) > 0\n        WITH labels(n)[0] AS type, count(n) AS count\n        WHERE type IS NOT NULL\n        RETURN type, count\n        ORDER BY count DESC, type\n        ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:55,764 - neo4j.io - DEBUG - [#FD84]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,920 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {}
+2025-04-15 00:46:55,924 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {'t_first': 5, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:46:55,925 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,925 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:55,926 - neo4j.io - DEBUG - [#FD85]  S: RECORD * 1
+2025-04-15 00:46:55,928 - neo4j.io - DEBUG - [#FD85]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:55,928 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,929 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> released bolt-32262
+2025-04-15 00:46:55,929 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:55,929 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:55,931 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:55,931 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428029.625 => False
+2025-04-15 00:46:55,932 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:55,932 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:55,933 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:55,933 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> picked existing connection bolt-32262
+2025-04-15 00:46:55,933 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:55,933 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> handing out existing connection
+2025-04-15 00:46:55,933 - neo4j.io - DEBUG - [#FD85]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,934 - neo4j.io - DEBUG - [#FD85]  C: RUN '\n        MATCH ()-[r]->()\n        RETURN DISTINCT type(r) AS type\n        ORDER BY type\n        ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:55,934 - neo4j.io - DEBUG - [#FD85]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,950 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {}
+2025-04-15 00:46:55,954 - neo4j.io - DEBUG - [#FD86]  S: SUCCESS {'t_first': 4, 'fields': ['n', 'r', 'm']}
+2025-04-15 00:46:55,955 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,970 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {}
+2025-04-15 00:46:55,973 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {'t_first': 4, 'fields': ['count']}
+2025-04-15 00:46:55,973 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,974 - neo4j.io - DEBUG - [#FD87]  S: RECORD * 1
+2025-04-15 00:46:55,974 - neo4j.io - DEBUG - [#FD87]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:55,974 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,975 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> released bolt-32265
+2025-04-15 00:46:55,975 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:55,975 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:55,976 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:55,976 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428028.281, ttl=10, perf_time=428029.671 => False
+2025-04-15 00:46:55,976 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:55,977 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428028.281, ttl=10)
+2025-04-15 00:46:55,977 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:55,977 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> picked existing connection bolt-32265
+2025-04-15 00:46:55,977 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:55,978 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> handing out existing connection
+2025-04-15 00:46:55,978 - neo4j.io - DEBUG - [#FD87]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:55,978 - neo4j.io - DEBUG - [#FD87]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:46:55,978 - neo4j.io - DEBUG - [#FD87]  C: PULL {'n': 1000}
+2025-04-15 00:46:55,983 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {}
+2025-04-15 00:46:55,986 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {'t_first': 3, 'fields': ['type', 'count']}
+2025-04-15 00:46:55,986 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:55,991 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,991 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,991 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,992 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,993 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,993 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,993 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,993 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,993 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,993 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,994 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,994 - neo4j.io - DEBUG - [#FD84]  S: RECORD * 1
+2025-04-15 00:46:55,994 - neo4j.io - DEBUG - [#FD84]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 5, 'db': 'neo4j'}
+2025-04-15 00:46:55,994 - neo4j.io - DEBUG - [#FD84]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:55,994 - neo4j.pool - DEBUG - [#FD84]  _: <POOL> released bolt-32264
+2025-04-15 00:46:55,995 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:46:55,995 - neo4j.io - DEBUG - [#FD82]  C: GOODBYE
+2025-04-15 00:46:55,996 - neo4j.io - DEBUG - [#FD82]  C: <CLOSE>
+2025-04-15 00:46:55,996 - neo4j.io - DEBUG - [#FD85]  C: GOODBYE
+2025-04-15 00:46:55,996 - neo4j.io - DEBUG - [#FD85]  C: <CLOSE>
+2025-04-15 00:46:55,997 - neo4j.io - DEBUG - [#FD86]  C: GOODBYE
+2025-04-15 00:46:55,997 - neo4j.io - DEBUG - [#FD85]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:55,997 - neo4j.io - DEBUG - [#FD86]  C: <CLOSE>
+2025-04-15 00:46:55,997 - neo4j.pool - DEBUG - [#FD85]  _: <POOL> released bolt-32262
+2025-04-15 00:46:55,998 - neo4j.io - DEBUG - [#FD87]  C: GOODBYE
+2025-04-15 00:46:55,998 - neo4j.io - DEBUG - [#FD86]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:55,998 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:55,998 - neo4j.pool - DEBUG - [#FD86]  _: <POOL> released bolt-32263
+2025-04-15 00:46:55,999 - neo4j.io - DEBUG - [#FD87]  C: <CLOSE>
+2025-04-15 00:46:55,999 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (3/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:55,999 - neo4j.io - DEBUG - [#FD84]  C: GOODBYE
+2025-04-15 00:46:55,999 - neo4j.io - DEBUG - [#FD87]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:46:55,999 - app_final - ERROR - ≤È—Ø÷ÿ ‘ ß∞‹ (3/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))), ≤È—Ø: 
+            MATCH (n)-[r]->(m)
+            RETURN n, r, m 
+            LIMIT $limit*3
+            
+2025-04-15 00:46:55,999 - neo4j.io - DEBUG - [#FD84]  C: <CLOSE>
+2025-04-15 00:46:55,999 - neo4j.pool - DEBUG - [#FD87]  _: <POOL> released bolt-32265
+2025-04-15 00:46:56,000 - __main__ - INFO - ¥¶¿ÌΩ·π˚: 0 ∏ˆΩ⁄µ„, 0 ∏ˆπÿœµ, «Î«Ûœﬁ÷∆: 100
+2025-04-15 00:46:56,000 - __main__ - INFO - Neo4j ˝æ›ø‚¡¨Ω”“—πÿ±’
+2025-04-15 00:46:56,000 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:46:56,000 - app_final - INFO - ≤È—Ø∑µªÿµƒΩ⁄µ„ ˝: 0, πÿœµ ˝: 0
+2025-04-15 00:46:56,000 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:56] "GET /api/node_types HTTP/1.1" 200 -
+2025-04-15 00:46:56,001 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:46:56] "GET /api/graph?limit=100 HTTP/1.1" 200 -
+2025-04-15 00:46:57,000 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, routing address IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:57,001 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, routing address IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:57,002 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:57,003 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:46:57,004 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:57,005 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:46:57,005 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:57,006 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:46:57,007 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:46:57,021 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:57,021 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:57,023 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:57,023 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:46:57,025 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:57,027 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:57,050 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:57,052 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:57,254 - neo4j.io - DEBUG - [#FD89]  C: <SECURE> b5aca062.databases.neo4j.io
+2025-04-15 00:46:57,256 - neo4j.io - DEBUG - [#FD88]  C: <SECURE> b5aca062.databases.neo4j.io
+2025-04-15 00:46:57,467 - neo4j.io - DEBUG - [#FD89]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:57,468 - neo4j.io - DEBUG - [#FD88]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:57,468 - neo4j.io - DEBUG - [#FD89]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:57,468 - neo4j.io - DEBUG - [#FD88]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:57,673 - neo4j.io - DEBUG - [#FD89]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:57,674 - neo4j.io - DEBUG - [#FD89]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:57,676 - neo4j.io - DEBUG - [#FD89]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:57,677 - neo4j.io - DEBUG - [#FD89]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:57,677 - neo4j.io - DEBUG - [#FD89]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:57,678 - neo4j.io - DEBUG - [#FD89]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:57,678 - neo4j.io - DEBUG - [#FD88]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:57,679 - neo4j.io - DEBUG - [#FD88]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:57,679 - neo4j.io - DEBUG - [#FD88]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:57,680 - neo4j.io - DEBUG - [#FD88]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:57,680 - neo4j.io - DEBUG - [#FD88]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:57,681 - neo4j.io - DEBUG - [#FD88]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:57,887 - neo4j.io - DEBUG - [#FD89]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32267', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:57,888 - neo4j.io - DEBUG - [#FD89]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:57,890 - neo4j.io - DEBUG - [#FD89]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:57,891 - neo4j.io - DEBUG - [#FD89]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:57,892 - neo4j.io - DEBUG - [#FD89]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:57,893 - neo4j.io - DEBUG - [#FD88]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32268', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:57,894 - neo4j.io - DEBUG - [#FD88]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:57,895 - neo4j.io - DEBUG - [#FD88]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:57,895 - neo4j.io - DEBUG - [#FD88]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:57,896 - neo4j.io - DEBUG - [#FD88]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:46:58,096 - neo4j.io - DEBUG - [#FD89]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:58,097 - neo4j.pool - DEBUG - [#FD89]  _: <POOL> released bolt-32267
+2025-04-15 00:46:58,099 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:58,100 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10))
+2025-04-15 00:46:58,101 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:58,102 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:58,103 - neo4j.io - DEBUG - [#FD88]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:46:58,103 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:58,104 - neo4j.pool - DEBUG - [#FD88]  _: <POOL> released bolt-32268
+2025-04-15 00:46:58,104 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428031.796 => False
+2025-04-15 00:46:58,105 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:58,105 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:58,106 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10))
+2025-04-15 00:46:58,107 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:58,107 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:58,108 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:58,108 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:58,108 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:58,108 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:58,110 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:58,110 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428031.796 => False
+2025-04-15 00:46:58,110 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:58,111 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:58,111 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:58,111 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:58,111 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:58,111 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:58,112 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:58,112 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:58,112 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:58,332 - neo4j.io - DEBUG - [#FD8B]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:58,353 - neo4j.io - DEBUG - [#FD8A]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:58,558 - neo4j.io - DEBUG - [#FD8B]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:58,560 - neo4j.io - DEBUG - [#FD8B]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:58,601 - neo4j.io - DEBUG - [#FD8A]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:58,602 - neo4j.io - DEBUG - [#FD8A]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:58,782 - neo4j.io - DEBUG - [#FD8B]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:58,784 - neo4j.io - DEBUG - [#FD8B]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:58,786 - neo4j.io - DEBUG - [#FD8B]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:58,787 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:58,789 - neo4j.io - DEBUG - [#FD8B]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:58,790 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:58,843 - neo4j.io - DEBUG - [#FD8A]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:58,844 - neo4j.io - DEBUG - [#FD8A]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:58,846 - neo4j.io - DEBUG - [#FD8A]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:58,847 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:58,848 - neo4j.io - DEBUG - [#FD8A]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:58,850 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:46:59,013 - neo4j.io - DEBUG - [#FD8B]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32269', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:59,014 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:59,015 - neo4j.io - DEBUG - [#FD8B]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:59,017 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:59,017 - neo4j.io - DEBUG - [#FD8B]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:59,018 - neo4j.io - DEBUG - [#FD8B]  C: RUN 'MATCH (n) RETURN count(n) LIMIT 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:59,020 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:59,021 - neo4j.io - DEBUG - [#FD8B]  C: PULL {'n': 1000}
+2025-04-15 00:46:59,091 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32270', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:46:59,093 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:59,094 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:46:59,095 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:46:59,095 - neo4j.io - DEBUG - [#FD8A]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:59,096 - neo4j.io - DEBUG - [#FD8A]  C: RUN 'MATCH (n) RETURN count(n) LIMIT 1' {} {'db': 'neo4j'}
+2025-04-15 00:46:59,097 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:46:59,097 - neo4j.io - DEBUG - [#FD8A]  C: PULL {'n': 1000}
+2025-04-15 00:46:59,242 - neo4j.io - DEBUG - [#FD8B]  S: SUCCESS {}
+2025-04-15 00:46:59,245 - neo4j.io - DEBUG - [#FD8B]  S: SUCCESS {'t_first': 3, 'fields': ['count(n)']}
+2025-04-15 00:46:59,246 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:59,247 - neo4j.io - DEBUG - [#FD8B]  S: RECORD * 1
+2025-04-15 00:46:59,248 - neo4j.io - DEBUG - [#FD8B]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:46:59,248 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:59,250 - neo4j.pool - DEBUG - [#FD8B]  _: <POOL> released bolt-32269
+2025-04-15 00:46:59,251 - __main__ - INFO - ≥…π¶¡¨Ω”µΩNeo4j ˝æ›ø‚
+2025-04-15 00:46:59,252 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:59,253 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:59,253 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:59,254 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428032.953 => False
+2025-04-15 00:46:59,254 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:59,255 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:59,255 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:59,256 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:46:59,256 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:46:59,257 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:46:59,258 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:46:59,342 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {}
+2025-04-15 00:46:59,345 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'t_first': 3, 'fields': ['count(n)']}
+2025-04-15 00:46:59,345 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:59,346 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:46:59,347 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:46:59,348 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:59,349 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> released bolt-32270
+2025-04-15 00:46:59,349 - __main__ - INFO - ≥…π¶¡¨Ω”µΩNeo4j ˝æ›ø‚
+2025-04-15 00:46:59,351 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:59,351 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:59,352 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:59,352 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428033.046 => False
+2025-04-15 00:46:59,353 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:59,354 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:59,354 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:59,355 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> picked existing connection bolt-32270
+2025-04-15 00:46:59,355 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:59,356 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> handing out existing connection
+2025-04-15 00:46:59,356 - neo4j.io - DEBUG - [#FD8A]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:59,357 - neo4j.io - DEBUG - [#FD8A]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:46:59,357 - neo4j.io - DEBUG - [#FD8A]  C: PULL {'n': 1000}
+2025-04-15 00:46:59,496 - neo4j.io - DEBUG - [#FD8C]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:46:59,598 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {}
+2025-04-15 00:46:59,601 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'t_first': 3, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:46:59,602 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:59,603 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:46:59,605 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:46:59,606 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:46:59,607 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:59,608 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> released bolt-32270
+2025-04-15 00:46:59,608 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:46:59,609 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:46:59,610 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:59,610 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428033.296 => False
+2025-04-15 00:46:59,611 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:59,611 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:59,612 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:59,612 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> picked existing connection bolt-32270
+2025-04-15 00:46:59,613 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:59,613 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> handing out existing connection
+2025-04-15 00:46:59,613 - neo4j.io - DEBUG - [#FD8A]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:59,614 - neo4j.io - DEBUG - [#FD8A]  C: RUN 'MATCH p=()-->() RETURN count(p) as count' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:46:59,615 - neo4j.io - DEBUG - [#FD8A]  C: PULL {'n': 1000}
+2025-04-15 00:46:59,718 - neo4j.io - DEBUG - [#FD8C]  C: <MAGIC> 0x6060B017
+2025-04-15 00:46:59,719 - neo4j.io - DEBUG - [#FD8C]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:46:59,857 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {}
+2025-04-15 00:46:59,873 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'t_first': 16, 'fields': ['count']}
+2025-04-15 00:46:59,873 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:46:59,874 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:46:59,875 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:46:59,875 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:46:59,876 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> released bolt-32270
+2025-04-15 00:46:59,877 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:46:59,877 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:46:59,878 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:46:59,878 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428033.578 => False
+2025-04-15 00:46:59,878 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:46:59,879 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:46:59,879 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:46:59,879 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> picked existing connection bolt-32270
+2025-04-15 00:46:59,881 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:46:59,881 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> handing out existing connection
+2025-04-15 00:46:59,881 - neo4j.io - DEBUG - [#FD8A]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:46:59,881 - neo4j.io - DEBUG - [#FD8A]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:46:59,881 - neo4j.io - DEBUG - [#FD8A]  C: PULL {'n': 1000}
+2025-04-15 00:46:59,938 - neo4j.io - DEBUG - [#FD8C]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:46:59,940 - neo4j.io - DEBUG - [#FD8C]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:46:59,942 - neo4j.io - DEBUG - [#FD8C]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:46:59,944 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:46:59,945 - neo4j.io - DEBUG - [#FD8C]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:46:59,945 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:47:00,122 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {}
+2025-04-15 00:47:00,124 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'t_first': 2, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:47:00,125 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:00,126 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:47:00,128 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,128 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:47:00,129 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:00,131 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> released bolt-32270
+2025-04-15 00:47:00,132 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:47:00,133 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:47:00,134 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:47:00,135 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428033.828 => False
+2025-04-15 00:47:00,136 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:47:00,138 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:47:00,139 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:47:00,139 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> picked existing connection bolt-32270
+2025-04-15 00:47:00,140 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:47:00,140 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> handing out existing connection
+2025-04-15 00:47:00,140 - neo4j.io - DEBUG - [#FD8A]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:00,141 - neo4j.io - DEBUG - [#FD8A]  C: RUN '\n                MATCH (n)\n                WITH labels(n)[0] as type, count(n) as count\n                WHERE type IS NOT NULL\n                RETURN type, count\n                ORDER BY count DESC\n                ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:47:00,141 - neo4j.io - DEBUG - [#FD8A]  C: PULL {'n': 1000}
+2025-04-15 00:47:00,164 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32271', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:47:00,165 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:47:00,166 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:47:00,167 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:47:00,167 - neo4j.io - DEBUG - [#FD8C]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:00,168 - neo4j.io - DEBUG - [#FD8C]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:47:00,168 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:47:00,169 - neo4j.io - DEBUG - [#FD8C]  C: PULL {'n': 1000}
+2025-04-15 00:47:00,385 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {}
+2025-04-15 00:47:00,389 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {}
+2025-04-15 00:47:00,393 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {'t_first': 2, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:47:00,393 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:00,394 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:47:00,394 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,395 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:47:00,396 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:00,396 - neo4j.pool - DEBUG - [#FD8C]  _: <POOL> released bolt-32271
+2025-04-15 00:47:00,398 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:47:00,398 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:47:00,399 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:47:00,400 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428034.093 => False
+2025-04-15 00:47:00,400 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:47:00,401 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:47:00,401 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:47:00,401 - neo4j.pool - DEBUG - [#FD8C]  _: <POOL> picked existing connection bolt-32271
+2025-04-15 00:47:00,402 - neo4j.pool - DEBUG - [#FD8C]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:47:00,402 - neo4j.pool - DEBUG - [#FD8C]  _: <POOL> handing out existing connection
+2025-04-15 00:47:00,403 - neo4j.io - DEBUG - [#FD8C]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:00,404 - neo4j.io - DEBUG - [#FD8C]  C: RUN '\n        MATCH ()-[r]->()\n        RETURN DISTINCT type(r) AS type\n        ORDER BY type\n        ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:47:00,405 - neo4j.io - DEBUG - [#FD8B]  C: GOODBYE
+2025-04-15 00:47:00,406 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> error: Failed to write data to connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): SSLError(0, 'Underlying socket connection gone (_ssl.c:2334)')
+2025-04-15 00:47:00,406 - neo4j.io - DEBUG - [#FD8B]  _: <CONNECTION> ignoring failed close SessionExpired("Failed to write data to connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))")
+2025-04-15 00:47:00,407 - neo4j.io - DEBUG - [#FD8B]  C: <CLOSE>
+2025-04-15 00:47:00,408 - neo4j.io - DEBUG - [#FD88]  C: GOODBYE
+2025-04-15 00:47:00,408 - neo4j.io - DEBUG - [#FD88]  _: <CONNECTION> error: Failed to write data to connection ResolvedIPv4Address(('34.126.161.242', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): SSLError(0, 'Underlying socket connection gone (_ssl.c:2334)')
+2025-04-15 00:47:00,408 - neo4j.io - DEBUG - [#FD88]  _: <CONNECTION> ignoring failed close SessionExpired("Failed to write data to connection ResolvedIPv4Address(('34.126.161.242', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))")
+2025-04-15 00:47:00,408 - neo4j.io - DEBUG - [#FD88]  C: <CLOSE>
+2025-04-15 00:47:00,410 - neo4j.io - DEBUG - [#FD8C]  C: PULL {'n': 1000}
+2025-04-15 00:47:00,410 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'t_first': 24, 'fields': ['type', 'count']}
+2025-04-15 00:47:00,411 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:00,411 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,411 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,411 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,411 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,412 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,412 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,412 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,412 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,413 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,413 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,413 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,413 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,414 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,414 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,414 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,414 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,414 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,414 - neo4j.io - DEBUG - [#FD8A]  S: RECORD * 1
+2025-04-15 00:47:00,415 - neo4j.io - DEBUG - [#FD8A]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:47:00,415 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:00,415 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> released bolt-32270
+2025-04-15 00:47:00,415 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:47:00,415 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:47:00,415 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:47:00,415 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428031.796, ttl=10, perf_time=428034.109 => False
+2025-04-15 00:47:00,415 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:47:00,415 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428031.796, ttl=10)
+2025-04-15 00:47:00,416 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:47:00,416 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> picked existing connection bolt-32270
+2025-04-15 00:47:00,416 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:47:00,416 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> handing out existing connection
+2025-04-15 00:47:00,416 - neo4j.io - DEBUG - [#FD8A]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:00,416 - neo4j.io - DEBUG - [#FD8A]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:47:00,417 - neo4j.io - DEBUG - [#FD8A]  C: PULL {'n': 1000}
+2025-04-15 00:47:00,634 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {}
+2025-04-15 00:47:00,639 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {'t_first': 3, 'fields': ['type']}
+2025-04-15 00:47:00,640 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:00,641 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,642 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,642 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,643 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,644 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,645 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,646 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,646 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,646 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,647 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,647 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,648 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,648 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,648 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,649 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,649 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,649 - neo4j.io - DEBUG - [#FD8C]  S: RECORD * 1
+2025-04-15 00:47:00,650 - neo4j.io - DEBUG - [#FD8C]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 2, 'db': 'neo4j'}
+2025-04-15 00:47:00,650 - neo4j.io - DEBUG - [#FD8C]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:00,650 - neo4j.pool - DEBUG - [#FD8C]  _: <POOL> released bolt-32271
+2025-04-15 00:47:00,651 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:47:00,651 - neo4j.io - DEBUG - [#FD89]  C: GOODBYE
+2025-04-15 00:47:00,652 - neo4j.io - DEBUG - [#FD89]  C: <CLOSE>
+2025-04-15 00:47:00,652 - neo4j.io - DEBUG - [#FD8A]  C: GOODBYE
+2025-04-15 00:47:00,652 - neo4j.io - DEBUG - [#FD8A]  C: <CLOSE>
+2025-04-15 00:47:00,653 - neo4j.io - DEBUG - [#FD8C]  C: GOODBYE
+2025-04-15 00:47:00,653 - neo4j.io - DEBUG - [#FD8A]  _: <CONNECTION> error: Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687))): OSError('No data')
+2025-04-15 00:47:00,653 - neo4j.pool - DEBUG - [#FD8A]  _: <POOL> released bolt-32270
+2025-04-15 00:47:00,653 - neo4j.io - DEBUG - [#FD8C]  C: <CLOSE>
+2025-04-15 00:47:00,653 - app_final - WARNING - ≤È—Ø÷¥–– ß∞‹£¨’˝‘⁄÷ÿ ‘ (1/3): Failed to read from defunct connection IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687)) (ResolvedIPv4Address(('34.126.161.242', 7687)))
+2025-04-15 00:47:00,653 - __main__ - INFO - Neo4j ˝æ›ø‚¡¨Ω”“—πÿ±’
+2025-04-15 00:47:00,654 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:47:00] "GET /api/relation-types HTTP/1.1" 200 -
+2025-04-15 00:47:01,654 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, routing address IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:47:01,657 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> resolve home database
+2025-04-15 00:47:01,658 - neo4j.pool - DEBUG - [#0000]  _: <POOL> attempting to update routing table from IPv4Address(('b5aca062.databases.neo4j.io', 7687))
+2025-04-15 00:47:01,659 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: b5aca062.databases.neo4j.io:7687
+2025-04-15 00:47:01,681 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:47:01,682 - neo4j.pool - DEBUG - [#0000]  _: <POOL> _acquire router connection, database=None, address=ResolvedIPv4Address(('34.126.161.242', 7687))
+2025-04-15 00:47:01,684 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:47:01,699 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:47:01,900 - neo4j.io - DEBUG - [#FD8F]  C: <SECURE> b5aca062.databases.neo4j.io
+2025-04-15 00:47:02,108 - neo4j.io - DEBUG - [#FD8F]  C: <MAGIC> 0x6060B017
+2025-04-15 00:47:02,110 - neo4j.io - DEBUG - [#FD8F]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:47:02,312 - neo4j.io - DEBUG - [#FD8F]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:47:02,315 - neo4j.io - DEBUG - [#FD8F]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:47:02,318 - neo4j.io - DEBUG - [#FD8F]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:47:02,318 - neo4j.io - DEBUG - [#FD8F]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:47:02,321 - neo4j.io - DEBUG - [#FD8F]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:47:02,323 - neo4j.io - DEBUG - [#FD8F]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:47:02,523 - neo4j.io - DEBUG - [#FD8F]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32273', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:47:02,524 - neo4j.io - DEBUG - [#FD8F]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:47:02,525 - neo4j.io - DEBUG - [#FD8F]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:47:02,526 - neo4j.io - DEBUG - [#FD8F]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:47:02,526 - neo4j.io - DEBUG - [#FD8F]  C: ROUTE {'address': 'b5aca062.databases.neo4j.io:7687'} () {}
+2025-04-15 00:47:02,728 - neo4j.io - DEBUG - [#FD8F]  S: SUCCESS {'rt': {'servers': [{'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'WRITE'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'READ'}, {'addresses': ['si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'], 'role': 'ROUTE'}], 'ttl': 10, 'db': 'neo4j'}}
+2025-04-15 00:47:02,731 - neo4j.pool - DEBUG - [#FD8F]  _: <POOL> released bolt-32273
+2025-04-15 00:47:02,732 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> updated table=RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428036.421, ttl=10)
+2025-04-15 00:47:02,733 - neo4j.pool - DEBUG - [#0000]  _: <POOL> update routing table from address=ResolvedIPv4Address(('34.126.161.242', 7687)) (RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428036.421, ttl=10))
+2025-04-15 00:47:02,734 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:47:02,735 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:47:02,736 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:47:02,737 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428036.421, ttl=10, perf_time=428036.421 => False
+2025-04-15 00:47:02,738 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:47:02,738 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428036.421, ttl=10)
+2025-04-15 00:47:02,739 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:47:02,740 - neo4j.pool - DEBUG - [#0000]  _: <POOL> trying to hand out new connection
+2025-04-15 00:47:02,740 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> in: si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687
+2025-04-15 00:47:02,753 - neo4j.io - DEBUG - [#0000]  _: <RESOLVE> dns resolver out: 34.126.161.242:7687
+2025-04-15 00:47:02,754 - neo4j.io - DEBUG - [#0000]  C: <OPEN> 34.126.161.242:7687
+2025-04-15 00:47:02,982 - neo4j.io - DEBUG - [#FD92]  C: <SECURE> si-b5aca062-9bfd.production-orch-0695.neo4j.io
+2025-04-15 00:47:03,194 - neo4j.io - DEBUG - [#FD92]  C: <MAGIC> 0x6060B017
+2025-04-15 00:47:03,195 - neo4j.io - DEBUG - [#FD92]  C: <HANDSHAKE> 0x000001FF 0x00080805 0x00020404 0x00000003
+2025-04-15 00:47:03,402 - neo4j.io - DEBUG - [#FD92]  S: <HANDSHAKE> 0x000001FF [3] 0x00040404 0x00040405 0x00020805 0x00
+2025-04-15 00:47:03,405 - neo4j.io - DEBUG - [#FD92]  C: <HANDSHAKE> 0x00000805 0x00
+2025-04-15 00:47:03,407 - neo4j.io - DEBUG - [#FD92]  C: HELLO {'user_agent': 'neo4j-python/5.28.1 Python/3.12.2-final-0 (win32)', 'routing': {'address': 'b5aca062.databases.neo4j.io:7687'}, 'bolt_agent': {'product': 'neo4j-python/5.28.1', 'platform': 'Windows 11; AMD64', 'language': 'Python/3.12.2-final-0', 'language_details': 'CPython; 3.12.2-final-0 (main, Feb 16 2024 20:42:31) [MSC v.1937 64 bit (AMD64)]'}}
+2025-04-15 00:47:03,408 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> client state: CONNECTED > AUTHENTICATION
+2025-04-15 00:47:03,410 - neo4j.io - DEBUG - [#FD92]  C: LOGON {'scheme': 'basic', 'principal': 'neo4j', 'credentials': '*******'}
+2025-04-15 00:47:03,410 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> client state: AUTHENTICATION > READY
+2025-04-15 00:47:03,617 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'server': 'Neo4j/5.27-aura', 'protocol_version': '5.8', 'connection_id': 'bolt-32274', 'hints': {'connection.recv_timeout_seconds': 60, 'telemetry.enabled': True, 'ssr.enabled': True}}
+2025-04-15 00:47:03,619 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: CONNECTED > AUTHENTICATION
+2025-04-15 00:47:03,620 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'advertised_address': 'si-b5aca062-9bfd.production-orch-0695.neo4j.io:7687'}
+2025-04-15 00:47:03,621 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: AUTHENTICATION > READY
+2025-04-15 00:47:03,622 - neo4j.io - DEBUG - [#FD92]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:03,623 - neo4j.io - DEBUG - [#FD92]  C: RUN 'MATCH (n) RETURN count(n) LIMIT 1' {} {'db': 'neo4j'}
+2025-04-15 00:47:03,624 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> client state: READY > STREAMING
+2025-04-15 00:47:03,625 - neo4j.io - DEBUG - [#FD92]  C: PULL {'n': 1000}
+2025-04-15 00:47:03,833 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {}
+2025-04-15 00:47:03,836 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'t_first': 3, 'fields': ['count(n)']}
+2025-04-15 00:47:03,836 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:03,837 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:03,837 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:47:03,837 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:03,837 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> released bolt-32274
+2025-04-15 00:47:03,838 - __main__ - INFO - ≥…π¶¡¨Ω”µΩNeo4j ˝æ›ø‚
+2025-04-15 00:47:03,838 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards cached database: neo4j
+2025-04-15 00:47:03,838 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=True)
+2025-04-15 00:47:03,838 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:47:03,838 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428036.421, ttl=10, perf_time=428037.531 => False
+2025-04-15 00:47:03,838 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:47:03,838 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428036.421, ttl=10)
+2025-04-15 00:47:03,839 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:47:03,839 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> picked existing connection bolt-32274
+2025-04-15 00:47:03,839 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:47:03,839 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> handing out existing connection
+2025-04-15 00:47:03,839 - neo4j.io - DEBUG - [#FD92]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:03,840 - neo4j.io - DEBUG - [#FD92]  C: RUN 'RETURN 1' {} {}
+2025-04-15 00:47:03,840 - neo4j.io - DEBUG - [#FD92]  C: PULL {'n': 1000}
+2025-04-15 00:47:04,047 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {}
+2025-04-15 00:47:04,051 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'t_first': 3, 'fields': ['1'], 'db': 'neo4j'}
+2025-04-15 00:47:04,051 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:04,051 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> pinning database: 'neo4j'
+2025-04-15 00:47:04,052 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,052 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 0, 'db': 'neo4j'}
+2025-04-15 00:47:04,052 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:04,053 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> released bolt-32274
+2025-04-15 00:47:04,053 - neo4j - DEBUG - [#0000]  _: <WORKSPACE> routing towards fixed database: neo4j
+2025-04-15 00:47:04,053 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire routing connection, access_mode='WRITE', database=AcquisitionDatabase(name='neo4j', guessed=False)
+2025-04-15 00:47:04,054 - neo4j.pool - DEBUG - [#0000]  _: <POOL> routing aged?, database=neo4j
+2025-04-15 00:47:04,054 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> purge check: last_updated_time=428036.421, ttl=10, perf_time=428037.75 => False
+2025-04-15 00:47:04,054 - neo4j.pool - DEBUG - [#0000]  _: <ROUTING> checking table freshness (readonly=False): table expired=False, has_server_for_mode=True, table routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))} => True
+2025-04-15 00:47:04,055 - neo4j.pool - DEBUG - [#0000]  _: <POOL> using existing routing table RoutingTable(database='neo4j', routers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, readers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, writers={IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))}, last_updated_time=428036.421, ttl=10)
+2025-04-15 00:47:04,055 - neo4j.pool - DEBUG - [#0000]  _: <POOL> acquire address, database='neo4j' address=IPv4Address(('si-b5aca062-9bfd.production-orch-0695.neo4j.io', 7687))
+2025-04-15 00:47:04,055 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> picked existing connection bolt-32274
+2025-04-15 00:47:04,055 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> checked re_auth auth=None updated=False force=False
+2025-04-15 00:47:04,056 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> handing out existing connection
+2025-04-15 00:47:04,056 - neo4j.io - DEBUG - [#FD92]  C: TELEMETRY 2  # (<TelemetryAPI.AUTO_COMMIT: 2>)
+2025-04-15 00:47:04,057 - neo4j.io - DEBUG - [#FD92]  C: RUN '\n                MATCH ()-[r]->()\n                WITH type(r) as type, count(r) as count\n                RETURN type, count\n                ORDER BY count DESC\n                ' {} {'db': 'neo4j', 'bookmarks': ['FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=']}
+2025-04-15 00:47:04,057 - neo4j.io - DEBUG - [#FD92]  C: PULL {'n': 1000}
+2025-04-15 00:47:04,265 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {}
+2025-04-15 00:47:04,284 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'t_first': 19, 'fields': ['type', 'count']}
+2025-04-15 00:47:04,285 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: READY > STREAMING
+2025-04-15 00:47:04,286 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,286 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,286 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,287 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,287 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,287 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,288 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,288 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,288 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,288 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,289 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,289 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,289 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,289 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,289 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,289 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,290 - neo4j.io - DEBUG - [#FD92]  S: RECORD * 1
+2025-04-15 00:47:04,290 - neo4j.io - DEBUG - [#FD92]  S: SUCCESS {'bookmark': 'FB:kcwQgd8iXRNaReiOGb7JXlrYE8kL+JA=', 'statuses': [{'gql_status': '00000', 'status_description': 'note: successful completion'}], 'type': 'r', 't_last': 1, 'db': 'neo4j'}
+2025-04-15 00:47:04,290 - neo4j.io - DEBUG - [#FD92]  _: <CONNECTION> server state: STREAMING > READY
+2025-04-15 00:47:04,290 - neo4j.pool - DEBUG - [#FD92]  _: <POOL> released bolt-32274
+2025-04-15 00:47:04,290 - __main__ - INFO - Õ≥º∆ ˝æ›ªÒ»°≥…π¶: 1431 Ω⁄µ„, 1426 πÿœµ
+2025-04-15 00:47:04,290 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-04-15 00:47:04,291 - neo4j.io - DEBUG - [#FD8F]  C: GOODBYE
+2025-04-15 00:47:04,291 - neo4j.io - DEBUG - [#FD8F]  C: <CLOSE>
+2025-04-15 00:47:04,291 - neo4j.io - DEBUG - [#FD92]  C: GOODBYE
+2025-04-15 00:47:04,291 - neo4j.io - DEBUG - [#FD92]  C: <CLOSE>
+2025-04-15 00:47:04,291 - __main__ - INFO - Neo4j ˝æ›ø‚¡¨Ω”“—πÿ±’
+2025-04-15 00:47:04,292 - werkzeug - INFO - 127.0.0.1 - - [15/Apr/2025 00:47:04] "GET /api/stats HTTP/1.1" 200 -
+2025-04-15 00:55:25,653 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Microsoft\\Desktop\\ML\\nlp\\cursor\\÷™ ∂Õº∆◊ππΩ®”Îø… ”ªØ±∏∑›10\\app_final.py', reloading
+2025-04-15 00:55:25,806 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 00:55:26,736 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 00:55:26,741 - werkzeug - INFO -  * Debugger PIN: 133-101-651
+2025-04-15 00:59:26,696 - werkzeug - INFO -  * Detected change in 'c:\\Users\\Microsoft\\Desktop\\ML\\nlp\\cursor\\÷™ ∂Õº∆◊ππΩ®”Îø… ”ªØ±∏∑›10\\app_final.py', reloading
+2025-04-15 00:59:26,803 - werkzeug - INFO -  * Restarting with stat
+2025-04-15 00:59:27,833 - werkzeug - WARNING -  * Debugger is active!
+2025-04-15 00:59:27,838 - werkzeug - INFO -  * Debugger PIN: 133-101-651

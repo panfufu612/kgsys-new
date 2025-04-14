@@ -23,7 +23,7 @@ for directory in ['logs', 'templates', 'static', 'uploads']:
 
 # 配置日志
 logging.basicConfig(
-    level=logging.DEBUG,  # 使用DEBUG级别
+    level=logging.INFO,  # 使用INFO级别而非DEBUG
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
         logging.FileHandler("debug.log"),
@@ -82,7 +82,7 @@ class Neo4jConnection:
                 except exceptions.ServiceUnavailable:
                     retries += 1
                     if retries >= cls._max_retries:
-                        logger.error(f"无法连接到Neo4j数据库，请确保数据库正在运行 (尝试 {retries}/{cls._max_retries})")
+                        logger.error(f"无法连接到Neo4j数据库，请确保数据库正在运行")
                         cls._driver = None
                     else:
                         logger.warning(f"Neo4j连接失败，正在重试 ({retries}/{cls._max_retries})...")
@@ -116,7 +116,7 @@ class Neo4jConnection:
         while retries < max_retries:
             driver = cls.get_driver()
             if not driver:
-                app.logger.error("无法获取Neo4j连接")
+                logger.error("无法获取Neo4j连接")
                 return None
                 
             try:
@@ -132,16 +132,16 @@ class Neo4jConnection:
                 last_error = e
                 retries += 1
                 cls._driver = None  # 重置连接
-                app.logger.warning(f"查询执行失败，正在重试 ({retries}/{max_retries}): {str(e)}")
+                logger.warning(f"查询执行失败，正在重试 ({retries}/{max_retries})")
                 if retries < max_retries:
                     time.sleep(1)  # 等待1秒后重试
             except Exception as e:
-                app.logger.error(f"执行查询时出错: {str(e)}, 查询: {query}")
+                logger.error(f"执行查询时出错: {str(e)}")
                 # 返回空列表而不是None，使调用代码更容易处理
                 return []
         
         if last_error:
-            app.logger.error(f"查询重试失败 ({retries}/{max_retries}): {str(last_error)}, 查询: {query}")
+            logger.error(f"查询重试失败 ({retries}/{max_retries})")
         
         # 返回空列表而不是None
         return []
@@ -219,9 +219,6 @@ def process_graph_data(records, limit):
                     links.append(link_data)
                     link_keys.add(rel_key)
         
-        # 记录日志
-        logger.info(f"处理结果: {len(nodes)} 个节点, {len(links)} 个关系, 请求限制: {limit}")
-        
         return {
             "nodes": nodes, 
             "links": links
@@ -288,9 +285,6 @@ def get_graph():
         if result is None:
             return jsonify({"error": "处理图谱数据时出错"}), 500
             
-        # 记录结果日志，帮助调试
-        app.logger.info(f"查询返回的节点数: {len(result['nodes'])}, 关系数: {len(result['links'])}")
-        
         return jsonify(result)
         
     except ValueError as e:
@@ -380,18 +374,11 @@ def get_node_types():
         # 如果仍然没有找到任何类型，则加载从图中观察到的默认类型
         if not types:
             default_types = [
-                "Professor", 
-                "Research", 
-                "Institution", 
-                "Project", 
-                "Publication", 
-                "Conference", 
-                "Topic",
-                "Organization", 
-                "Person", 
-                "Misc"
+                "Professor", "Research", "Institution", "Project", 
+                "Publication", "Conference", "Topic",
+                "Organization", "Person", "Misc"
             ]
-            app.logger.warning("未能从数据库获取节点类型，将使用默认类型列表")
+            logger.warning("未能从数据库获取节点类型，将使用默认类型列表")
             
             # 将默认类型添加到结果中
             node_types = [{"type": t, "count": 0} for t in default_types]
@@ -405,7 +392,7 @@ def get_node_types():
             "type_details": node_types
         })
     except Exception as e:
-        app.logger.error(f"获取节点类型时出错: {str(e)}")
+        logger.error(f"获取节点类型时出错: {str(e)}")
         # 即使发生错误，也返回一些基本类型以保证UI正常工作
         default_types = ["Professor", "Research", "Institution", "Project", "Publication", "Conference", "Topic"]
         return jsonify({
@@ -418,8 +405,6 @@ def get_node_types():
 def get_node_subgraph(node_id):
     """获取以特定节点为中心的子图"""
     try:
-        app.logger.info(f"请求节点ID={node_id}的子图数据")
-        
         # 验证参数
         try:
             depth = int(request.args.get('depth', 1))  # 关系深度，默认为1
@@ -429,7 +414,7 @@ def get_node_subgraph(node_id):
             depth = min(max(depth, 1), 3)  # 深度限制在1-3之间
             limit = min(max(limit, 10), 500)  # 节点数量限制在10-500之间
         except ValueError:
-            app.logger.warning(f"请求的参数格式错误: depth={request.args.get('depth')}, limit={request.args.get('limit')}")
+            logger.warning(f"请求的参数格式错误: depth={request.args.get('depth')}, limit={request.args.get('limit')}")
             return jsonify({"error": "参数格式错误"}), 400
         
         # 验证节点是否存在
@@ -437,15 +422,12 @@ def get_node_subgraph(node_id):
         check_result = Neo4jConnection.run_query(check_query, {"node_id": node_id})
         
         if not check_result:
-            app.logger.warning(f"节点ID={node_id}不存在")
             return jsonify({
                 "error": "节点不存在",
                 "node_id": node_id
             }), 404
         
         # 获取子图数据
-        app.logger.info(f"获取节点ID={node_id}的子图，深度={depth}，限制={limit}")
-        
         query = f"""
         MATCH (center)-[r*0..{depth}]-(neighbor)
         WHERE id(center) = $node_id
@@ -458,7 +440,6 @@ def get_node_subgraph(node_id):
         records = Neo4jConnection.run_query(query, {"node_id": node_id, "limit": limit})
         
         if not records:
-            app.logger.error(f"获取节点ID={node_id}的子图数据失败")
             return jsonify({
                 "error": "无法获取子图数据",
                 "node_id": node_id
@@ -487,7 +468,7 @@ def get_node_subgraph(node_id):
                     nodes_data.append(node_data)
                     node_ids.add(node.element_id)
                 except Exception as e:
-                    app.logger.error(f"处理节点数据时出错: {str(e)}")
+                    logger.error(f"处理节点数据时出错: {str(e)}")
         
         # 处理关系
         links_data = []
@@ -514,9 +495,7 @@ def get_node_subgraph(node_id):
                             links_data.append(link_data)
                             link_keys.add(rel_key)
                 except Exception as e:
-                    app.logger.error(f"处理关系数据时出错: {str(e)}")
-        
-        app.logger.info(f"成功获取节点ID={node_id}的子图数据: {len(nodes_data)}个节点, {len(links_data)}个关系")
+                    logger.error(f"处理关系数据时出错: {str(e)}")
         
         return jsonify({
             "nodes": nodes_data,
@@ -528,7 +507,7 @@ def get_node_subgraph(node_id):
             }
         })
     except Exception as e:
-        app.logger.error(f"获取子图数据时出错: {str(e)}", exc_info=True)
+        logger.error(f"获取子图数据时出错: {str(e)}")
         return jsonify({
             "error": f"获取子图数据时出错: {str(e)}",
             "node_id": node_id
@@ -678,7 +657,7 @@ def get_nodes():
             if count_result and len(count_result) > 0:
                 total = count_result[0].get("total", 0)
         except Exception as e:
-            app.logger.warning(f"获取节点数量时出错: {str(e)}")
+            logger.warning(f"获取节点数量时出错: {str(e)}")
             # 如果获取数量失败，使用当前列表长度作为替代
             total = len(nodes)
         
@@ -693,7 +672,7 @@ def get_nodes():
             "pages": pages
         })
     except Exception as e:
-        app.logger.error(f"获取节点列表时出错: {str(e)}")
+        logger.error(f"获取节点列表时出错: {str(e)}")
         # 返回空数据而不是错误状态码，避免前端崩溃
         return jsonify({
             "nodes": [],
